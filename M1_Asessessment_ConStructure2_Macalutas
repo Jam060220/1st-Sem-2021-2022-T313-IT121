@@ -1,0 +1,43 @@
+#include <stdio.h>
+int main() {
+
+int age, option;
+printf("Select Gender: ");
+printf("\t[1]-Male");
+printf("\t[2]-Female\n\n");
+
+scanf("%d", &option);
+
+switch(option){
+case 1:
+    printf("\n\nYou select Male");
+    printf("\nEnter Age: \t");
+    scanf("%d", &age);
+
+    if(age >=90){
+        printf("Your pension is 4000\n", age);
+    }
+        else if(age>=60){
+            printf("Your pension is 6000\n");
+        }
+            else if(age<60){
+                printf("Your pension is 0\n");
+            }
+            break;
+
+case 2:
+    printf("You selected Female");
+    printf("\tEnter Age: \t");
+    scanf("%d", &age);
+
+    if (age>=90){
+        printf("The pension is 3000\n");
+    }
+     else if(age>=60){
+            printf("Your pension is 5000\n");
+        }
+            else if(age<60){
+                printf("Your pension is 0\n");
+            }
+
+}
